@@ -1,0 +1,20 @@
+img{
+    padding: 4rem;
+}
+.logo{
+    padding: 0 !important;
+}
+.searchIcon{
+    padding: 0 !important;
+}
+
+.footerimage{
+    padding: 0 !important;
+}
+
+@media screen and (max-width:390px){
+.products img{
+    width: 80px;
+    padding: 0;
+}
+}

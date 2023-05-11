@@ -138,10 +138,10 @@ window.onload = function(){
         <h2> ${current.name}</h2>
       </span>
       <span class=product-row-1>
-        <h3>${current.description}</h3>
+        <h4>${current.description}</h4>
        </span>
       <span class=product-row-1> 
-        <p>${current.price}</p>
+        <h5>${current.price}</h5>
       </span>
       </div>`
 

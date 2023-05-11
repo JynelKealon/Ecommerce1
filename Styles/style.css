@@ -8,7 +8,7 @@ body {
 nav {
     background-color: #111;
     color: white;
-    padding: 20px, 50px;
+    padding: 1.25rem, 3.125rem;
 
 }
 
@@ -17,14 +17,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #111;
 }
 
 .search {
     display: flex;
     align-items: center;
     background-color: gray;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.625rem;
 }
 
 .searchInput{
@@ -37,8 +38,8 @@ nav {
 }
 
 .limitedOffer{
-    font-size: 20px;
-    border-bottom: 2px solid #427f66;
+    font-size: 1.25rem;
+    border-bottom: 0.125rem solid #427f66;
     cursor: pointer;
 }
 
@@ -57,8 +58,8 @@ a.custom-link:link {
 } 
 
 .menuItems{
-    margin-right: 40px;
-    padding-left: 65px;
+    margin-right: 2.5rem;
+    padding-left: 4.063rem;
     cursor: pointer;
     color: lightgray;
     font-weight: 20; 
@@ -89,8 +90,8 @@ a.custom-link:link {
 }
 
 .slideBg{
-    width:550px;
-    height: 650px;
+    width:34.375rem;
+    height: 40.625rem;
     border-radius: 50%;
     position: absolute;
     background-color: blue;
@@ -105,7 +106,7 @@ a.custom-link:link {
     top: 10%;
     right: 10%;
     color: white;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
     text-align: center;
     z-index: 1;
@@ -115,7 +116,7 @@ a.custom-link:link {
     position: relative;
     top: 15%;
     left: 20%; 
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
     z-index: 1;
@@ -131,7 +132,7 @@ a.custom-link:link {
     align-items: center;
     top: 25%;
     left: 10%;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 400;
     color: white;
     z-index: 1;
@@ -182,7 +183,7 @@ a.custom-link:link {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 1.25rem;
     /* margin-left: 75px; */
 }
 
@@ -194,20 +195,20 @@ a.custom-link:link {
 }
 
 .featureIcon{
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
 }
 
 .featureTitle{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .featureDesc{
     color: gray;
     width: 50%;
-    height: 100px;
+    height: 6.25rem;
 }
 
 .product{
@@ -231,20 +232,20 @@ a.custom-link:link {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    margin-top: -1.375rem;
+    padding: 1rem;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 0.188rem 0.188rem 0;
      user-select: none ;  
     background-color: #555;
     color: #fff;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
 
 } 
 
@@ -252,13 +253,13 @@ a.custom-link:link {
 
 #next{
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0.188rem 0 0 0.188rem;
 }
 
 a.navButton:hover {
         background-color: #fff;
         color: #555;
-        border: 1px solid #555; 
+        border: 0.063rem solid #555; 
         font-weight: bold; 
     }
     
@@ -274,10 +275,10 @@ a.navButton:hover {
   z-index: 100;
   top: 1rem;
   left: 1rem;
-  border:  solid 1px;
+  border:  solid 0.063rem;
   background: white;
   cursor: pointer;
-  margin-top: 21px;
+  margin-top: 1.313rem;
 }
 
 .closeIcon {
@@ -315,9 +316,7 @@ a.navButton:hover {
 .products {
   display: flex;
    flex-wrap: wrap;
-   /* margin-left: 150px; */
    justify-content: space-between;
-   /* padding-right: 150px; */
    padding-top: 20px;
    justify-content: space-around;
    row-gap: 30px;
@@ -337,9 +336,27 @@ width: 30%;
 box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px; 
 border-style: hidden;
 border-bottom: outset;
-
 }
 
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+h4{
+font-weight: 400;
+text-align: center;
+}
+
+h5{
+  color: green;
+text-shadow: #427f66;
+font-size: medium;
+text-align: center;
+}
+h5:hover{
+  
+}
   /* Footer styling */
 
 .footer{
@@ -360,23 +377,7 @@ p{
 
 
 
- /* @media (max-width:480px){
-    .featureIcon{
-        width: 50px;
-        height: 50px;
-    }
-    .sliderItem{
-        width: 100px;
-        height: 100px;
-    }
-} 
-
-@media (min-width:768px) and (max-width:1024px){
-    .featureIcon{
-        margin-left: 0;
-    }
-} */
-
+ 
 @media only screen and (max-width: 391px) {
     /* Set the width of the page to the width of the device */
  .body{
@@ -481,8 +482,8 @@ p{
   .sliderWrapper {
     display: flex;
     flex-direction: row;
-    width: 250vw;
-    transition: transform 4s ease-in-out; 
+    width: 350vw;
+    transition: transform 1s ease-in-out;
   }
   
   .sliderItem {
