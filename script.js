@@ -36,7 +36,7 @@ nextButton.addEventListener("click", () => {
   }
 });
 
-// Hamburger menu
+// Hamburger menu 
 const hamburgerIcon = document.getElementById('hamburgerIcon');
 const navMenu = document.querySelector('.navBottom');
 

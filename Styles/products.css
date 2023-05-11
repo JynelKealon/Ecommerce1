@@ -17,4 +17,11 @@ img{
     width: 80px;
     padding: 0;
 }
+footer{
+    width: 100%;
+}
+.features{
+    padding: 0;
+}
+
 }
