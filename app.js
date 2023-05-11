@@ -121,40 +121,54 @@ menuItems.forEach(function(menuItem) {
 });*/
 
 
-window.onload = function(){
+window.onload = function() {
+  // This function will run when the window has finished loading
 
   fetch('../products.json')
-  .then(response => response.json())
-  .then(data => {
+    // Fetch the 'products.json' file from the server
+    .then(response => response.json())
+    // Convert the response to JSON format
+    .then(data => {
+      // Once the JSON data is available, perform the following actions
 
-    let productHTML =''
-    for(let i = 0; i<data.length; i++){
-      let current = data[i]
-      let product = `<div class="product"> 
-      <span id="${current.id}" class=product-row-1>
-      <img src="${current.img}">
-      </span>
-      <span class=product-row-1> 
-        <h2> ${current.name}</h2>
-      </span>
-      <span class=product-row-1>
-        <h4>${current.description}</h4>
-       </span>
-      <span class=product-row-1> 
-        <h5>${current.price}</h5>
-      </span>
-      </div>`
+      let productHTML = '';
+      // Create an empty string to store the HTML code for each product
 
-      productHTML += product
-    }
-    let products = document.getElementsByClassName('products')[0]
-    products.innerHTML = productHTML
-  })
-  
-  .catch(error => console.error(error));
+      for (let i = 0; i < data.length; i++) {
+        // Loop through each item in the 'data' array
 
+        let current = data[i];
+        // Store the current item in a variable called 'current'
 
+        let product = `
+          <div class="product">
+            <span id="${current.id}" class="product-row-1">
+              <img src="${current.img}">
+            </span>
+            <span class="product-row-1">
+              <h2>${current.name}</h2>
+            </span>
+            <span class="product-row-1">
+              <h4>${current.description}</h4>
+            </span>
+            <span class="product-row-1">
+              <h5>${current.price}</h5>
+            </span>
+          </div>`;
+        // Create the HTML code for a product using template literals, and assign it to the 'product' variable
 
+        productHTML += product;
+        // Add the HTML code for the current product to the 'productHTML' string
+      }
 
+      let products = document.getElementsByClassName('products')[0];
+      // Get the element with the class 'products' (assuming there is only one), and store it in the 'products' variable
 
-}
+      products.innerHTML = productHTML;
+      // Set the innerHTML of the 'products' element to the concatenated HTML code stored in 'productHTML'
+    })
+
+    .catch(error => console.error(error));
+    // If there is an error during the fetch or JSON parsing, log the error to the console
+};
+
